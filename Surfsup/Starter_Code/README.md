@@ -20,3 +20,8 @@ With the code in hand, we can proceed to calculate the max, min and avg. tempera
 Next, we can use this id to filter the results on a query of measurement dates combined with the .max() function to extract the most recent observation date for this station.
 With this date, we can then proceed to obtain results from there onwards that we can use in the histogram. I have added some comments on my Jupyter Notebook to explain some of the logic behind my code.
 
+API / Flask
+I've included my code in the file app.py. 
+This is very similar to the exercises covered in class, so I leveraged class materials along with my code on the climate_stater file to complete this portion of the challenge.
+The most challenging questions were #4 and #5, which required filtering and user input for dates. I combined these two into a single block of code vs. coding the same for each and adding a filter for the end date where applicable. I also created an object to house our query ("select"). All this in an effort to abide by the DRY principle!
+I have asked the user to input the date in the same format as these are presented in the source data file.
